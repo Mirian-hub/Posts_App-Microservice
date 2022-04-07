@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "start": "concurrently \"cd query && nodemon index.js\" \"cd posts && nodemon index.js\" \"cd moderate && nodemon index.js\" \"cd event-bus && nodemon index.js\" \"cd comments && nodemon index.js\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mirian-hub/Posts_App-Microservice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mirian-hub/Posts_App-Microservice/issues"
+  },
+  "homepage": "https://github.com/Mirian-hub/Posts_App-Microservice#readme",
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
