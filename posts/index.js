@@ -35,5 +35,6 @@ app.post("/events", (req, res) => {
 });
 
 app.listen(4000, () => {
+  console.log("posts api changed");
   console.log("listening to 4000 (posts api)");
 });
